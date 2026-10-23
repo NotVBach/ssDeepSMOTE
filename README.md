@@ -34,6 +34,7 @@ bash scripts/setup_env.sh
 conda activate ssdeepsmote
 bash scripts/run_all.sh
 ```
+- You can observe output or download trained model from [here](https://drive.google.com/file/d/1Ks3AgaIXAuk2ZqWKYtsk37fl07auKI9A/view?usp=sharing)
 
 ## How to run with other dataset
 - It should be in COCO format as the dataset used in this repo
