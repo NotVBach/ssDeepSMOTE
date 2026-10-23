@@ -1,0 +1,8 @@
+base: common.yaml
+stage0:
+  splits: [train, val, test]
+  overwrite: false
+  expected_counts:
+    train: [497, 2243, 1001, 2191, 613, 791, 2746, 4646]
+    val: [302, 301, 314, 308, 307, 306, 326, 2297]
+    test: [301, 303, 321, 308, 311, 308, 336, 2281]

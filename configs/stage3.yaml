@@ -1,0 +1,34 @@
+base: common.yaml
+train:
+  epochs: 200
+  classes_per_batch: 8
+  samples_per_class: 8
+  max_steps_per_epoch: null
+  encoder_lr: 2.0e-5
+  decoder_lr: 2.0e-4
+  betas: [0.5, 0.99]
+  weight_decay: 0.0
+  disc_lr: 1.0e-4
+  disc_betas: [0.0, 0.99]
+  grad_clip: null
+  augment: true
+  sample_every: 5
+loss:
+  w_recon: 1.0
+  w_perm: 0.3
+  w_cycle: 0.2
+  w_cls: 0.1
+  w_adv: 0.05
+  w_l1: 1.0
+  w_lpips: 1.0
+  w_msssim: 0.5
+  lambda_min: 0.15
+  lambda_max: 0.85
+  adv_start_epoch: 0
+disc:
+  channels: [64, 128, 256, 512, 512, 512]
+  mbstd_group: 4
+  proj_dim: 128
+  r1_gamma: 1.0
+  r1_interval: 16
+  r1_batch: 16

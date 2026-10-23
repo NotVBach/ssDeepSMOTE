@@ -1,0 +1,19 @@
+name: ssdeepsmote
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - numpy=1.26
+  - scipy
+  - scikit-learn
+  - pandas
+  - pillow
+  - matplotlib
+  - pyyaml
+  - tqdm
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cu121
+      - torch==2.3.1
+      - torchvision==0.18.1
+      - lpips==0.1.4

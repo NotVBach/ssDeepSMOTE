@@ -1,0 +1,14 @@
+base: common.yaml
+mae:
+  mask_ratio: 0.6
+  visible_loss_weight: 0.0
+train:
+  epochs: 200
+  batch_size: 128
+  lr: 1.5e-4
+  betas: [0.9, 0.95]
+  weight_decay: 0.05
+  warmup_epochs: 10
+  grad_clip: null
+  max_steps_per_epoch: null
+  sample_every: 10
