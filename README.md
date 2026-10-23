@@ -1,6 +1,6 @@
 ## Self-supervised DeepSMOTE
 
-ssDeepSMOTE balances the classes of an imbalanced blood-cell dataset by generating synthetic images of the minority classes.
+ssDeepSMOTE balances the classes of an imbalanced dataset by generating synthetic images of the minority classes.
 
 ![Overview](Overview.png)
 
